@@ -1,0 +1,181 @@
+/*--------------------------
+Configurações globais
+---------------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e0e0e0;
+    color: #2F4F4F;
+}
+
+h1{
+    font-size: 26px;
+}
+h2{
+    font-size: 22px;
+}
+h3{
+    font-size: 18px;
+}
+p{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+
+/*--------------------------
+Configurações do header
+---------------------------*/
+
+/*-------------------------------
+Configurações do menu primário
+--------------------------------*/
+#container-nav{
+    background-image: linear-gradient(45deg, #B0E0E6, #D8BFD8 );
+}
+#menu-primario{
+    max-width: 520px;
+    margin: -1px auto;
+    padding: 0px;
+    border-top: 1px solid transparent;
+}
+#menu-prmario ul{
+    list-style: none;
+}
+#menu-primario ul li{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+#menu-primario ul li a{
+    padding: 8px 15px;
+    color: black;
+    display: inline-block;
+}
+#menu-primario ul li a:hover{
+    background-color: #2F4F4F;
+    color: white;
+    transition: background .7s;
+}
+
+/*--------------------------------------
+Configurações dos informes/boas vindas
+---------------------------------------*/
+#informes{
+    height: 400px;
+    animation-name: muda-fundo;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-position: cover;
+    background-position: center;
+    /*
+    background-image: url(https://i.pinimg.com/originals/1a/5b/02/1a5b02eb6ffde00d80856cd8419dc1ae.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#informes:hover{
+    background-image: url(https://img.travessa.com.br/livro/GR/fd/fd5cf9f2-d1a0-42cb-aa28-ba96e2472b12.jpg);
+    background-size: contain;
+    background-position: center;
+    transition: background-image 1s; */
+}
+@keyframes muda-fundo {
+    0%{background-image: url(https://i.pinimg.com/originals/1a/5b/02/1a5b02eb6ffde00d80856cd8419dc1ae.jpg);}
+    50%{background-image: url(https://i.pinimg.com/originals/1a/5b/02/1a5b02eb6ffde00d80856cd8419dc1ae.jpg);}
+
+    51%{background-image: url(https://img.travessa.com.br/livro/GR/fd/fd5cf9f2-d1a0-42cb-aa28-ba96e2472b12.jpg);}
+    100%{background-image: url(https://img.travessa.com.br/livro/GR/fd/fd5cf9f2-d1a0-42cb-aa28-ba96e2472b12.jpg);}
+
+}
+
+/*--------------------------------------
+Configurações do container grande
+---------------------------------------*/
+#container-grande{
+    max-width: 1024px;
+    margin: -100px auto;
+    padding: 15px;
+    background-color: #e0e0e0;;
+    border-radius: 20px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*--------------------------------------
+Configurações do player
+---------------------------------------*/
+#div-player{
+    max-width: 300px;
+    margin: auto;
+}
+#container-player::after{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.1);
+    margin: 10px 0px;
+}
+
+/*--------------------------------------
+Configurações do conteúdo principal >> section
+---------------------------------------*/
+section{
+    margin: 40px 0px 0px 0px;
+}
+
+/*--------------------------------------
+Configurações do conteúdo do article
+---------------------------------------*/
+article{
+    display: flex;
+    margin-bottom: 40px;
+}
+article .img-info{
+    width: 20%;
+}
+article .img-info img{
+    width: 100%;
+}
+
+article .text-info{
+    width: 80%;
+    padding: 0px 0px 0px 20px;
+}
+article .text-info h1::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 10px 0px;
+}
+article .text-info h2{
+    color: chocolate;
+}
+article .text-info p::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 10px 0px;
+}
+
+/*--------------------------------------
+Configurações do footer
+---------------------------------------*/
+footer{
+    display: flex;
+    background-color: #D8BFD8;
+    height: 120px;
+    margin: 130px 0px 0px 0px;
+    border-bottom: solid 1px transparent;
+    place-content: center;
+    place-items: center;
+}
