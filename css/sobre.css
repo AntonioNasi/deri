@@ -15,10 +15,10 @@ body{
 }
 
 h1{
-    font-size: 26px;
+    font-size: 22px;
 }
 h2{
-    font-size: 22px;
+    font-size: 18px;
 }
 h3{
     font-size: 18px;
@@ -31,10 +31,10 @@ a{
 }
 @media screen and (max-width: 600px){
     h1{
-        font-size: 21px;
+        font-size: 20px;
     }
     h2{
-        font-size: 19px;
+        font-size: 17px;
     }
     h3{
         font-size: 17px;
@@ -271,8 +271,16 @@ section{
 /*--------------------------------------
 Configurações do conteúdo do article
 ---------------------------------------*/
+.link-artigos{
+    display: block;
+    color: black;
+    padding: 10px 0px 1px 0px;
+    border-radius: 5px;
+}
+.link-artigos:hover{
+    background-color: rgba(0, 0, 0, 0.03);
+}
 article{
-    display: flex;
     margin-bottom: 40px;
 }
 @media screen and (max-width:600px){
@@ -283,22 +291,34 @@ article{
 }
 
 article .img-info{
-    width: 20%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    place-content: center;
+    place-items: center;
 }
 @media screen and (max-width:600px){
     article .img-info{
-        width: 75%;
+        max-width: 853px;
         margin: auto;
     }
 }
-article .img-info img{
-    width: 100%;
-    border-radius: 10px;
+
+article .img-info iframe{
+    width: 853px;
+    height: 480px;
+}
+@media screen and (max-width:600px){
+    article .img-info iframe{
+        width: auto;
+        height: auto;
+    }
 }
 
 article .text-info{
-    width: 80%;
+    width: 100%;
     padding: 0px 0px 0px 20px;
+    margin: 10px 0px 0px 0px;
 }
 @media screen and (max-width:600px){
     article .text-info{
@@ -307,6 +327,13 @@ article .text-info{
     }
 }
 
+article .text-info h1{
+    text-align: center;
+}
+article .text-info h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
 article .text-info h1::after{
     content: "";
     display: block;
@@ -317,64 +344,10 @@ article .text-info h1::after{
 article .text-info h2{
     color: chocolate;
 }
-article .text-info p::after{
-    content: "";
-    display: block;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin: 10px 0px;
-}
 
 /*--------------------------------------
 Configurações da gallery
 ---------------------------------------*/
-#gallery-container{
-    margin: 130px 0px 0px 0px;
-}
-#gallery{
-    max-width: 1024px;
-    margin: auto;
-}
-
-.row {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
-    padding: 0 4px;
-}
-  
-/* Create four equal columns that sits next to each other */
-.column {
-    -ms-flex: 25%; /* IE10 */
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-  
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-    width: 100%;
-}
-  
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-}
-  
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .column {
-      -ms-flex: 100%;
-      flex: 100%;
-      max-width: 100%;
-    }
-}
 
 /*--------------------------------------
 Configurações do footer
@@ -383,7 +356,7 @@ footer{
     display: flex;
     background-color: #D8BFD8;
     height: 120px;
-    margin: 50px 0px 0px 0px;
+    margin: 130px 0px 0px 0px;
     border-bottom: solid 1px transparent;
     place-content: center;
     place-items: center;
