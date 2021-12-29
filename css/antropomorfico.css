@@ -326,8 +326,9 @@ article .text-info h1::after{
     background-color: rgba(0, 0, 0, 0.1);
     margin: 10px 0px;
 }
-article .text-info h2{
+article .text-info p{
     color: chocolate;
+    font-weight: 600;
 }
 
 /*--------------------------------------
