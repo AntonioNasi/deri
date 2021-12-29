@@ -243,29 +243,12 @@ Configurações do container grande
 /*--------------------------------------
 Configurações do player
 ---------------------------------------*/
-#div-player{
-    max-width: 300px;
-    margin: auto;
-}
-#container-player::after{
-    content: "";
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: rgba(0, 0, 255, 0.1);
-    margin: 10px 0px;
-}
-#container-player #descri{
-    font-size: 10;
-    text-align: center;
-    font-weight: lighter;
-}
 
 /*--------------------------------------
 Configurações do conteúdo principal >> section
 ---------------------------------------*/
 section{
-    margin: 40px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 /*--------------------------------------
@@ -344,6 +327,9 @@ article .text-info h1::after{
 article .text-info h2{
     color: chocolate;
 }
+#link-lattes{
+    margin-top: 10px;
+}
 
 /*--------------------------------------
 Configurações da gallery
@@ -353,11 +339,64 @@ Configurações da gallery
 Configurações do footer
 ---------------------------------------*/
 footer{
-    display: flex;
     background-color: #D8BFD8;
-    height: 120px;
-    margin: 130px 0px 0px 0px;
     border-bottom: solid 1px transparent;
-    place-content: center;
-    place-items: center;
+    padding: 30px 0px;
+    margin-top: 140px;
+}
+@media screen and (max-width:600px){
+    footer{
+        padding: 30px 15px;
+    }
+}
+footer #footer-content-container{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1024px;
+    margin: auto;
+}
+@media screen and (max-width:600px){
+    footer #footer-content-container{
+        display: block;
+    }
+}
+footer #footer-content-container .footer-content{
+    padding: 0px 10px 0px 10px;
+    flex-basis: 350px;
+    text-align: center;
+}
+@media screen and (max-width:600px){
+    footer #footer-content-container .footer-content{
+        padding: 0px 0px 30px 0px;
+    }
+}
+footer #footer-content-container .footer-content h3{
+    color: #2F4F4F;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:600px){
+    footer #footer-content-container #contato::after{
+        content: "";
+        display: block;
+        height: 1px;
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    footer #footer-content-container #parcerias::after{
+        content: "";
+        display: block;
+        height: 1px;
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+footer #footer-content-container #parcerias a{
+    display: block;
+    color: black;
+    line-height: 1.5;
+}
+footer #footer-content-container #parcerias a:hover{
+    background-color: #2F4F4F;
+    color: white;
+    transition: background-color .6s;
 }
