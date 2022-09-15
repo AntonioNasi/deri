@@ -62,7 +62,7 @@ Configurações do menu primário
     background-image: linear-gradient(45deg, #B0E0E6, #D8BFD8 );
 }
 #menu-primario{
-    max-width: 560px;
+    max-width: 400px;
     margin: -1px auto;
     padding: 0px;
     border-top: 1px solid transparent;
@@ -269,6 +269,13 @@ Configurações do container grande
     }
 }
 
+#container-grande .site-map{
+    margin-bottom: 15px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
 
 /*--------------------------------------
 Configurações do player
@@ -294,6 +301,7 @@ Configurações do conteúdo do article
     background-color: rgba(0, 0, 0, 0.03);
 }
 article{
+    display: flex;
     margin-bottom: 40px;
 }
 @media screen and (max-width:600px){
@@ -304,34 +312,25 @@ article{
 }
 
 article .img-info{
-    width: 80%;
-    margin: auto;
+    width: 10%;
     display: flex;
     place-content: center;
     place-items: center;
 }
 @media screen and (max-width:600px){
     article .img-info{
-        max-width: 853px;
+        width: 20%;
         margin: auto;
     }
 }
-
-article .img-info iframe{
-    width: 853px;
-    height: 480px;
-}
-@media screen and (max-width:600px){
-    article .img-info iframe{
-        width: auto;
-        height: auto;
-    }
+article .img-info img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 article .text-info{
     width: 90%;
     padding: 0px 0px 0px 20px;
-    margin: 10px 0px 0px 0px;
 }
 @media screen and (max-width:600px){
     article .text-info{
@@ -340,13 +339,6 @@ article .text-info{
     }
 }
 
-article .text-info h1{
-    text-align: center;
-}
-article .text-info h2{
-    text-align: center;
-    margin-bottom: 10px;
-}
 article .text-info h1::after{
     content: "";
     display: block;
@@ -354,8 +346,9 @@ article .text-info h1::after{
     background-color: rgba(0, 0, 0, 0.1);
     margin: 10px 0px;
 }
-article .text-info h2{
+article .text-info p{
     color: chocolate;
+    font-weight: 600;
 }
 
 /*--------------------------------------

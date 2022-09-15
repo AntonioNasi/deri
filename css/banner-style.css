@@ -1,0 +1,109 @@
+/*---------------------
+Formatações globais
+---------------------*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------
+Formatação do Banner
+-------------------------*/
+.content{
+    max-width: 1280px;
+    height: 400px;
+    margin: auto;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.content .slide-container{
+    margin: 0 auto;
+    display: flex;
+    animation-name: rolar;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rolar {
+    0%{transform:translatex(0px)}
+    16%{transform:translatex(0px)}
+
+    17%{transform:translatex(-1280px)}
+    32%{transform:translatex(-1280px)}
+
+    33%{transform:translatex(-2560px)}
+    48%{transform:translatex(-2560px)}
+
+    49%{transform:translatex(-3840px)}
+    63%{transform:translatex(-3840px)}
+
+    64%{transform:translatex(-5120px)}
+    79%{transform:translatex(-5120px)}
+
+    80%{transform:translatex(-6400px)}
+    99%{transform:translatex(-6400px)}
+
+    100%{transform:translatex(0px)}
+}
+
+.content .slides{
+    width: 1280px;
+    height: ;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.content .slides img{
+    width: 100%;
+}
+
+
+/*-------------------------
+Formatação do Banner Mobile
+-------------------------*/
+@media screen and (max-width:601px){
+    .img-grande{
+        display: none;
+    }
+    .content{
+        border-radius: 20px;
+        width: 350px;
+    }
+    .content .slides{
+        width: 350px;
+    }
+    @keyframes rolar {
+        0%{transform:translatex(0px)}
+        16%{transform:translatex(0px)}
+    
+        17%{transform:translatex(-360px)}
+        32%{transform:translatex(-360px)}
+    
+        33%{transform:translatex(-720px)}
+        48%{transform:translatex(-720px)}
+    
+        49%{transform:translatex(-1080px)}
+        63%{transform:translatex(-1080px)}
+    
+        64%{transform:translatex(-1440px)}
+        79%{transform:translatex(-1440px)}
+    
+        80%{transform:translatex(-1800px)}
+        99%{transform:translatex(-1800px)}
+    
+        100%{transform:translatex(0px)}
+    }
+}
+
+
+
+
+@media screen and (min-width:601px){
+    .img-mobile{
+        display: none;
+    }
+}

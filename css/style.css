@@ -62,7 +62,7 @@ Configurações do menu primário
     background-image: linear-gradient(45deg, #B0E0E6, #D8BFD8 );
 }
 #menu-primario{
-    max-width: 520px;
+    max-width: 400px;
     margin: -1px auto;
     padding: 0px;
     border-top: 1px solid transparent;
@@ -92,6 +92,40 @@ Configurações do menu primário
     color: white;
     transition: background .7s;
 }
+
+/*-------------------------------
+Configurações do sub menu
+--------------------------------*/
+
+#menu-livros:hover #sub-menu-a{
+    display: block;
+}
+#menu-primario ul li #sub-menu-a{
+    display: none;
+    position: absolute;
+    margin: -1px 0px;
+    background-color: #D8BFD8;
+    min-width: 160px;
+    padding: 0px 0px;
+    z-index: 1;
+}
+
+#menu-artigos:hover #sub-menu-b{
+    display: block;
+}
+#menu-primario ul li #sub-menu-b{
+    display: none;
+    position: absolute;
+    margin: -1px 0px;
+    background-color: #D8BFD8;
+    min-width: 160px;
+    padding: 0px 0px;
+    z-index: 1;
+}
+
+
+
+
 
 /*-------------------------------
 Configurações do menu mobile
