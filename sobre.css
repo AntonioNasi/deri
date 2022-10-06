@@ -1,0 +1,423 @@
+/*--------------------------
+Configurações globais
+---------------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e0e0e0;
+    color: #2F4F4F;
+}
+
+h1{
+    font-size: 22px;
+}
+h2{
+    font-size: 18px;
+}
+h3{
+    font-size: 18px;
+}
+p{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width: 600px){
+    h1{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 17px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+
+.mobile-config{
+    padding: 0px 15px;
+}
+
+/*--------------------------
+Configurações do header
+---------------------------*/
+header{
+    margin-top: 34px;
+}
+
+/*-------------------------------
+Configurações do menu primário
+--------------------------------*/
+.container-nav{
+    background-image: linear-gradient(45deg, #B0E0E6, #D8BFD8 );
+}
+#menu-primario{
+    max-width: 660px;
+    margin: -1px auto;
+    padding: 0px;
+    border-top: 1px solid transparent;
+}
+@media screen and (max-width:600px){
+    #menu-primario{
+        display: none;
+    }
+}
+
+#menu-prmario ul{
+    list-style: none;
+}
+#menu-primario ul li{
+    display: inline-block;
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+}
+#menu-primario ul li a{
+    padding: 8px 15px;
+    color: black;
+    display: inline-block;
+}
+#menu-primario ul li a:hover{
+    background-color: #2F4F4F;
+    color: white;
+    transition: background .7s;
+}
+
+/*-------------------------------
+Configurações do sub menu
+--------------------------------*/
+
+#menu-livros:hover #sub-menu-a{
+    display: block;
+}
+#menu-primario ul li #sub-menu-a{
+    display: none;
+    position: absolute;
+    margin: -1px 0px;
+    background-color: #D8BFD8;
+    min-width: 160px;
+    padding: 0px 0px;
+    z-index: 1;
+}
+
+#menu-artigos:hover #sub-menu-b{
+    display: block;
+}
+#menu-primario ul li #sub-menu-b{
+    display: none;
+    position: absolute;
+    margin: -1px 0px;
+    background-color: #D8BFD8;
+    min-width: 160px;
+    padding: 0px 0px;
+    z-index: 1;
+}
+
+/*-------------------------------
+Configurações do menu mobile
+--------------------------------*/
+#menu-mobile{
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#menu-mobile button{
+    background-color: transparent;
+    border: none;
+    width: 400px;
+}
+
+#menu-mobile button img{
+    width: 15%;
+}
+
+@media screen and (min-width: 601px){
+    #menu-mobile{
+        display: none;
+    }
+}
+
+.dropbtn {
+    color: black;
+    padding: 16px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+  
+.dropbtn:hover, .dropbtn:focus {
+    background-color: ;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #D8BFD8;
+    border-radius: 0px 0px 10px 10px;
+    min-width: 400px;
+    left: 0%;
+    overflow: auto;
+    z-index: 1;
+    text-align: center;
+}
+  
+.dropdown-content a {
+    color: black;
+    font-size: 18px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+      background-color: ;
+}
+
+.dropdown-content a::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+  
+.dropdown a:hover {background-color: ;}
+  
+.show {display: block;}
+
+/*--------------------------------------
+Configurações para o menu sumir/aparecer
+---------------------------------------*/
+#menu{
+    background-color: ;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.5s;
+}
+
+/*--------------------------------------
+Configurações dos informes/boas vindas
+---------------------------------------*/
+#informes{
+    height: 400px;
+    animation-name: muda-fundo;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /*
+    background-image: url(https://i.pinimg.com/originals/1a/5b/02/1a5b02eb6ffde00d80856cd8419dc1ae.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#informes:hover{
+    background-image: url(https://img.travessa.com.br/livro/GR/fd/fd5cf9f2-d1a0-42cb-aa28-ba96e2472b12.jpg);
+    background-size: contain;
+    background-position: center;
+    transition: background-image 1s; */
+}
+@keyframes muda-fundo {
+    0%{background-image: url(https://ogimg.infoglobo.com.br/in/25164425-807-17b/FT1086A/760/04_marx-engels-family.jpg);
+    background-position: top;
+    background-size: cover;}
+    50%{background-image: url(https://ogimg.infoglobo.com.br/in/25164425-807-17b/FT1086A/760/04_marx-engels-family.jpg);}
+
+    51%{background-image: url(./9.JPG);
+        background-position: center;
+        background-size: cover;}
+    100%{background-image: url(./9.JPG);
+        background-position: center;
+        background-size: cover;
+    }
+
+}
+
+/*--------------------------------------
+Configurações do container grande
+---------------------------------------*/
+#container-grande{
+    max-width: 1024px;
+    margin: -100px auto;
+    padding: 15px;
+    background-color: #e0e0e0;;
+    border-radius: 20px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width:600px){
+    #container-grande{
+        padding: 15px 10px;
+        margin: -80px auto;
+    }
+}
+
+
+/*--------------------------------------
+Configurações do player
+---------------------------------------*/
+
+/*--------------------------------------
+Configurações do conteúdo principal >> section
+---------------------------------------*/
+section{
+    margin: 0px 0px 0px 0px;
+}
+
+/*--------------------------------------
+Configurações do conteúdo do article
+---------------------------------------*/
+article{
+    display: flex;
+    margin-bottom: 40px;
+}
+@media screen and (max-width:600px){
+    article{
+        display: block;
+        margin-bottom: 60px;
+    }
+}
+
+article .img-info{
+    width: 20%;
+    display: ;
+    place-content: center;
+    place-items: center;
+}
+@media screen and (max-width:600px){
+    article .img-info{
+        width: 75%;
+        margin: auto;
+    }
+}
+
+
+article .img-info img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+article .text-info{
+    width: 80%;
+    padding: 0px 0px 0px 20px;
+}
+@media screen and (max-width:600px){
+    article .text-info{
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+article .text-info h1{
+    text-align: center;
+    margin-top: 10px;
+}
+article .text-info h1::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 10px 0px;
+}
+article .text-info h2{
+    color: chocolate;
+    text-align: center;
+    margin-bottom: 10px;
+}
+article .text-info p{
+    line-height: 1.5;
+}
+article .text-info p::after{
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin: 10px 0px;
+}
+
+/*--------------------------------------
+Configurações da gallery
+---------------------------------------*/
+
+/*--------------------------------------
+Configurações do footer
+---------------------------------------*/
+footer{
+    background-color: #D8BFD8;
+    border-bottom: solid 1px transparent;
+    padding: 30px 0px;
+    margin-top: 140px;
+}
+@media screen and (max-width:600px){
+    footer{
+        padding: 30px 15px;
+    }
+}
+footer #footer-content-container{
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1024px;
+    margin: auto;
+}
+@media screen and (max-width:600px){
+    footer #footer-content-container{
+        display: block;
+    }
+}
+footer #footer-content-container .footer-content{
+    padding: 0px 10px 0px 10px;
+    flex-basis: 350px;
+    text-align: center;
+}
+@media screen and (max-width:600px){
+    footer #footer-content-container .footer-content{
+        padding: 0px 0px 30px 0px;
+    }
+}
+footer #footer-content-container .footer-content h3{
+    color: #2F4F4F;
+    margin-bottom: 10px;
+}
+@media screen and (max-width:600px){
+    footer #footer-content-container #contato::after{
+        content: "";
+        display: block;
+        height: 1px;
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+    footer #footer-content-container #parcerias::after{
+        content: "";
+        display: block;
+        height: 1px;
+        margin-top: 20px;
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+footer #footer-content-container #parcerias a{
+    display: block;
+    color: black;
+    line-height: 1.5;
+}
+footer #footer-content-container #parcerias a:hover{
+    background-color: #2F4F4F;
+    color: white;
+    transition: background-color .6s;
+}

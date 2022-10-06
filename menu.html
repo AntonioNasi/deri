@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+</head>
+<body>
+    <nav id="menu-primario">
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li id="menu-livros"><a href="#">Ciência</a>
+
+                <ul id="sub-menu-a">
+                    <li><a href="./livros.html">Livros</a></li>
+                    <li><a href="./artigos.html">Artigos</a></li>
+                    <li><a href="./coletaneas.html">Coletâneas</a></li>
+                    <li><a href="./dissertacao.html">Dissertação</a></li>
+                    <li><a href="./tese.html">Tese</a></li>
+                </ul>
+
+            </li>
+            <li id="menu-artigos"><a href="./literatura.html">literatura</a>
+
+                <!--
+                <ul id="sub-menu-b">
+                    <li><a href="./html/a_academico.html">Acadêmicos</a></li>
+                    <li><a href="./html/a_outros.html">Outros</a></li>
+                </ul>
+                -->
+                
+            </li>
+            
+            <li><a href="./videos.html">Vídeos</a></li>
+            <li><a href="./sobre.html">Sobre</a></li>
+            <li><a href="./eventos.html">Eventos</a></li>
+            <li><a href="./leitura-fundamental.html">Leitura Fundamental</a></li>
+        </ul>
+    </nav>
+
+    <div id="menu-mobile">
+        <div class="dropdown">
+
+          <div id="caixa-button-mobile">
+            <div>
+              <button onclick="myFunction()" class="dropbtn">|||</button>
+            </div>
+          </div>
+
+            <div id="myDropdown" class="dropdown-content">
+                <ul>
+                    <li><a href="./index.html">Início</a></li>
+                    <li><a href="./livros.html">Livros</a></li>
+                    <li><a href="./artigos.html">Artigos</a></li>
+                    <li><a href="./coletaneas.html">Coletâneas</a></li>
+                    <li><a href="./dissertacao.html">Dissertação</a></li>
+                    <li><a href="./literatura.html">Literatura</a></li>
+                    <li><a href="./tese.html">Tese</a></li>
+                    <li><a href="./videos.html">Vídeos</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./eventos.html">Eventos</a></li>
+                    <li><a href="./leitura-fundamental.html">Leitura Fundamental</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="./menu_mobile.js"></script>
+
+    </div>
+</body>
+</html>

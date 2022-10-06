@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deribaldo Santos</title>
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+
+    <!------------------------------------
+      Carrega o html externo...
+    -------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+
+        $(function(){
+        $('#menu').load("./menu.html");
+        });
+
+    </script>
+  
+
+    <script src="./hide-navbar.js"></script>
+
+</head>
+
+<body>
+
+    <header>
+
+        <div class="container-nav" id="menu">
+          <!-- O menu está sendo carregado de um arquivo html externo -->
+        </div>
+
+        <div id="informes">
+
+        </div>
+
+    </header>
+
+    <div class="mobile-config">
+        <div id="container-grande">
+
+            <section>
+
+                <article>
+                    <div class="img-info">
+                        <img src="./Fótons de luz.jpeg">
+                        <figcaption> <i> Créditos: Luiza Belmino </i> </figcaption>
+                    </div>
+                    <div class="text-info">
+                        <h1>A ciência não é um prazer egoísta</h1>
+                        
+                        <p>Os afortunados que podem se consagrar às atividades científicas, devem, em primeiro lugar, pôr seus conhecimentos ao serviço da humanidade (Karl Marx).</p>
+                    </div>
+                </article>
+
+            </section>
+
+        </div>
+
+        
+
+        <div id="gallery-container">
+
+          <div class="galeria-title">
+            <p>Imagens do Instituto Lukács | Budapest, Hungria</p>
+          </div>
+
+            <div class="container">
+                <div class="mySlides">
+                  <div class="numbertext">1 / 10</div>
+                  <img src="./1.JPG" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">2 / 10</div>
+                  <img src="./2.JPG" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">3 / 10</div>
+                  <img src="./3.JPG" style="width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">4 / 10</div>
+                  <img src="./4.JPG" style="width:100%">
+                </div>
+              
+                <div class="mySlides">
+                  <div class="numbertext">5 / 10</div>
+                  <img src="./5.JPG" style="width:100%">
+                </div>
+                  
+                <div class="mySlides">
+                  <div class="numbertext">6 / 10</div>
+                  <img src="./6.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">7 / 10</div>
+                    <img src="./7.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">8 / 10</div>
+                    <img src="./8.JPG" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">9 / 10</div>
+                    <img src="./9.JPG" style="width:100%">
+                </div>
+
+                
+                  
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+              
+                <div class="caption-container">
+                  <p id="caption"></p>
+                </div>
+              
+                <div class="row">
+                  <div class="column">
+                    <img class="demo cursor" src="./small1.png" style="width:100%" onclick="currentSlide(1)" alt="Foto: Chica Galiléia">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./small2.png" style="width:100%" onclick="currentSlide(2)" alt="Foto: Chica Galiléia">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./small3.png" style="width:100%" onclick="currentSlide(3)" alt="Foto: Chica Galiléia">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./small4.png" style="width:100%" onclick="currentSlide(4)" alt="Foto: Chica Galiléia">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./small5.png" style="width:100%" onclick="currentSlide(5)" alt="Foto: Chica Galiléia">
+                  </div>    
+                  <div class="column">
+                    <img class="demo cursor" src="./small6.png" style="width:100%" onclick="currentSlide(6)" alt="Foto: Chica Galiléia">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./small7.png" style="width:100%" onclick="currentSlide(7)" alt="Foto: Chica Galiléia">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./small8.png" style="width:100%" onclick="currentSlide(8)" alt="Foto: Chica Galiléia">
+                  </div>
+                  <div class="column">
+                    <img class="demo cursor" src="./small9.png" style="width:100%" onclick="currentSlide(9)" alt="Foto: Chica Galiléia">
+                  </div>
+                  
+                </div>
+              </div>
+        </div>
+
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+        
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+        
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+        
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("demo");
+            let captionText = document.getElementById("caption");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            captionText.innerHTML = dots[slideIndex-1].alt;
+            }
+        </script>
+
+    </div>
+
+    <footer>
+        <div id="footer-content-container">
+            <div id="contato" class="footer-content">
+                <h3>Contato</h3>
+                deribaldo.santos@uece.br
+            </div>
+            <div id="parcerias" class="footer-content">
+                <h3>Sites parceiros</h3>
+                <a href="https://coletivoveredas.com.br/" target="_blank">Coletivo veredas</a>
+                <a href="https://www.sergiolessa.net/" target="_blank">Sérgio Lessa</a>
+                <a href="http://cristinapaniago.com/" target="_blank">Cristina Paniago</a>
+                <a href="http://ivotonet.xp3.biz/" target="_blank">Ivo Tonet</a>
+                <a href="https://classista.com.br/" target="_blank">Classista</a>
+            </div>
+            <div id="licenca" class="footer-content">
+                <h3>Licença</h3>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />O conteúdo deste site está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Atribuição Não Comercial 4.0 Internacional</a>.
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
