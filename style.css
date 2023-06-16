@@ -581,3 +581,8 @@ footer #footer-content-container #parcerias a:hover{
     color: white;
     transition: background-color .6s;
 }
+footer #ass{
+    text-align: center;
+    font-size: 12px;
+    margin: 20px 0px -20px 0px;
+}
